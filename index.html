@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official community website for TMG HOAI. Announcements, quick access, emergency contacts, projects, forms, committees, policies, and financial reports." />
+  <title>TMG HOAI | Official Community Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="tmg-logo.png" />
+  <link rel="apple-touch-icon" href="tmg-logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-loader" id="pageLoader"><div class="loader-inner"><div class="loader-mark"><img src="tmg-logo.png" alt="TMG HOAI Logo"></div><div class="loader-text">Loading community hub</div><div class="loader-bar"><span></span></div></div></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell">
+      <a href="#home" class="brand" aria-label="TMG HOAI Home">
+        <div class="brand-mark"><img src="tmg-logo.png" alt="TMG HOAI Logo"></div>
+        <div><strong>TMG HOAI</strong><span>Stay Connected. Stay Informed. Grow Together.</span></div>
+      </a>
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#announcements">Announcements</a><a href="#emergency">Emergency</a><a href="#payments">Payments</a><a href="#documents">Documents</a><a href="#committees">Committees</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+      <a href="#announcements">Announcements</a><a href="#emergency">Emergency</a><a href="#payments">Payments</a><a href="#documents">Documents</a><a href="#committees">Committees</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Official Community Website</p>
+          <h1>A clearer, safer, and more connected community.</h1>
+          <p class="hero-subtitle">Your central hub for official announcements, homeowner resources, emergency contacts, payment instructions, community projects, and transparent updates.</p>
+          <div class="hero-actions"><a href="#quick-access" class="btn primary">Go to Quick Access</a><a href="#announcements" class="btn secondary">Read Updates</a></div>
+          <div class="stats-grid"><div><strong>440+</strong><span>Homeowners</span></div><div><strong>24/7</strong><span>Security Info</span></div><div><strong>11</strong><span>Committees</span></div><div><strong>Online</strong><span>Forms</span></div></div>
+        </div>
+        <div class="hero-card reveal delay-1"><div class="dashboard-card"><p class="eyebrow gold">Community Snapshot</p><h2>TMG HOAI Dashboard</h2><div class="dashboard-grid"><a href="#announcements"><span>Announcements</span><strong>22 Updates</strong></a><a href="#quick-access"><span>Forms</span><strong>Grievance and requests</strong></a><a href="#emergency"><span>Safety</span><strong>Emergency contacts</strong></a><a href="#payments"><span>Finance</span><strong>Dues payment guide</strong></a></div></div></div>
+      </div>
+    </section>
+
+    <section class="feature-strip"><div class="container feature-grid"><article class="feature-card green reveal"><h3>Community Safety</h3><p>Emergency hotlines, security contacts, healthcare references, and proper escalation channels.</p></article><article class="feature-card white reveal delay-1"><h3>Resident Access</h3><p>Online forms, official files, Facebook group, payment guide, and board resolution folders.</p></article><article class="feature-card gold-card reveal delay-2"><h3>Transparent Operations</h3><p>Financial reports, policies, community updates, and formal HOA records in one place.</p></article></div></section>
+
+    <section class="section announcements-upgraded" id="announcements">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Announcements / Updates</p>
+          <h2>Official Community Updates</h2>
+          <p>Searchable and organized sublist for easier browsing of official announcements.</p>
+        </div>
+
+        <div class="announcement-tools reveal">
+          <label for="announcementSearch">Search updates</label>
+          <input type="search" id="announcementSearch" placeholder="Search by title, category, or keyword..." aria-label="Search announcements" />
+          <div class="announcement-filters" aria-label="Announcement filters">
+            <button type="button" class="filter-btn active" data-filter="all">All Updates</button>
+            <button type="button" class="filter-btn" data-filter="governance">Governance</button>
+            <button type="button" class="filter-btn" data-filter="finance">Finance</button>
+            <button type="button" class="filter-btn" data-filter="events">Events</button>
+            <button type="button" class="filter-btn" data-filter="turnover">Turnover</button>
+            <button type="button" class="filter-btn" data-filter="maintenance">Maintenance</button>
+          </div>
+        </div>
+
+        <div class="announcement-panel reveal">
+          <div class="announcement-panel-head">
+            <div><span class="panel-kicker">Latest updates first</span><h3>Community update sublist</h3></div>
+            <p>Scroll inside the list to view older updates.</p>
+          </div>
+          <div class="announcement-list" id="announcementList">
+          <article class="announcement-row reveal" data-category="governance" data-keywords="17 MAY 2026 Governance General Assembly Notice Official meeting reminders, agenda highlights, homeowner participation guidelines, and important community updates.">
+            <div class="announcement-date"><strong>17</strong><span>MAY 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Governance</span><h3>General Assembly Notice</h3><p>Official meeting reminders, agenda highlights, homeowner participation guidelines, and important community updates.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="utilities" data-keywords="09 MAY 2026 Utilities Misting Schedule Update Community misting advisories, machine status, and safety reminders for households and pets.">
+            <div class="announcement-date"><strong>09</strong><span>MAY 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Utilities</span><h3>Misting Schedule Update</h3><p>Community misting advisories, machine status, and safety reminders for households and pets.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="finance" data-keywords="06 MAY 2026 Finance Release of Homeowner’s Statement of Accounts Official release of homeowner account statements for clearer payment monitoring and records.">
+            <div class="announcement-date"><strong>06</strong><span>MAY 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Finance</span><h3>Release of Homeowner’s Statement of Accounts</h3><p>Official release of homeowner account statements for clearer payment monitoring and records.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="events" data-keywords="03 MAY 2026 Events TMG Basketball League Updates Game schedules, highlights, results, and community sports announcements for senior and kids divisions.">
+            <div class="announcement-date"><strong>03</strong><span>MAY 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Events</span><h3>TMG Basketball League Updates</h3><p>Game schedules, highlights, results, and community sports announcements for senior and kids divisions.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="maintenance" data-keywords="20 APR 2026 Maintenance Creek Cleaning with Barangay Creek cleaning activity conducted with barangay coordination and community support.">
+            <div class="announcement-date"><strong>20</strong><span>APR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Maintenance</span><h3>Creek Cleaning with Barangay</h3><p>Creek cleaning activity conducted with barangay coordination and community support.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="membership" data-keywords="18 APR 2026 Membership Household Profiling / Census Started Start of household profiling and census for improved records and community planning.">
+            <div class="announcement-date"><strong>18</strong><span>APR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Membership</span><h3>Household Profiling / Census Started</h3><p>Start of household profiling and census for improved records and community planning.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="finance" data-keywords="15 APR 2026 Finance BDO Passbook Turned Over BDO passbook turned over for official financial records and transition documentation.">
+            <div class="announcement-date"><strong>15</strong><span>APR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Finance</span><h3>BDO Passbook Turned Over</h3><p>BDO passbook turned over for official financial records and transition documentation.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="turnover" data-keywords="11 APR 2026 Turnover Turnover Partially Completed Partial turnover completed. Transition to Excel, account reconciliation, membership update, and document review started.">
+            <div class="announcement-date"><strong>11</strong><span>APR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Turnover</span><h3>Turnover Partially Completed</h3><p>Partial turnover completed. Transition to Excel, account reconciliation, membership update, and document review started.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="turnover" data-keywords="08 APR 2026 Turnover Additional Turnover Attempts Additional turnover attempts were made to continue the transition process.">
+            <div class="announcement-date"><strong>08</strong><span>APR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Turnover</span><h3>Additional Turnover Attempts</h3><p>Additional turnover attempts were made to continue the transition process.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="turnover" data-keywords="07 APR 2026 Turnover Turnover Attempt Turnover attempt conducted as part of transition follow-ups.">
+            <div class="announcement-date"><strong>07</strong><span>APR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Turnover</span><h3>Turnover Attempt</h3><p>Turnover attempt conducted as part of transition follow-ups.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="events" data-keywords="05 APR 2026 Events Easter Egg Hunt 2026 Successfully Held Easter Egg Hunt 2026 successfully held for the community.">
+            <div class="announcement-date"><strong>05</strong><span>APR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Events</span><h3>Easter Egg Hunt 2026 Successfully Held</h3><p>Easter Egg Hunt 2026 successfully held for the community.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="governance" data-keywords="01 APR 2026 Governance Newly Elected BODs and Officers Meeting Newly elected BODs and officers held their first meeting.">
+            <div class="announcement-date"><strong>01</strong><span>APR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Governance</span><h3>Newly Elected BODs and Officers Meeting</h3><p>Newly elected BODs and officers held their first meeting.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="turnover" data-keywords="31 MAR 2026 Turnover Second Turnover Schedule Request Second request for turnover schedule from outgoing BODs.">
+            <div class="announcement-date"><strong>31</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Turnover</span><h3>Second Turnover Schedule Request</h3><p>Second request for turnover schedule from outgoing BODs.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="community" data-keywords="29 MAR 2026 Community Community Clean-Up Drive Community clean-up drive conducted with volunteers.">
+            <div class="announcement-date"><strong>29</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Community</span><h3>Community Clean-Up Drive</h3><p>Community clean-up drive conducted with volunteers.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="resident services" data-keywords="28 MAR 2026 Resident Services Official Grievance Online Form Launched Official grievance online form launched for structured reporting and tracking.">
+            <div class="announcement-date"><strong>28</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Resident Services</span><h3>Official Grievance Online Form Launched</h3><p>Official grievance online form launched for structured reporting and tracking.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="committees" data-keywords="27 MAR 2026 Committees Call for Committee Members Call for committee members and acceptance of volunteers.">
+            <div class="announcement-date"><strong>27</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Committees</span><h3>Call for Committee Members</h3><p>Call for committee members and acceptance of volunteers.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="turnover" data-keywords="26 MAR 2026 Turnover First Official Turnover Request First official request for turnover schedule.">
+            <div class="announcement-date"><strong>26</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Turnover</span><h3>First Official Turnover Request</h3><p>First official request for turnover schedule.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="governance" data-keywords="25 MAR 2026 Governance Oath-taking of BODs Oath-taking of BODs at Barangay San Roque Hall. Angelo Fernandez stepped down from his position.">
+            <div class="announcement-date"><strong>25</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Governance</span><h3>Oath-taking of BODs</h3><p>Oath-taking of BODs at Barangay San Roque Hall. Angelo Fernandez stepped down from his position.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="events" data-keywords="24 MAR 2026 Events TMG Easter Egg Hunt 2026 Announced Announcement of TMG Easter Egg Hunt 2026.">
+            <div class="announcement-date"><strong>24</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Events</span><h3>TMG Easter Egg Hunt 2026 Announced</h3><p>Announcement of TMG Easter Egg Hunt 2026.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="compliance" data-keywords="23 MAR 2026 Compliance Election Reports Submitted ELECOM submitted the election reports to DHSUD.">
+            <div class="announcement-date"><strong>23</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Compliance</span><h3>Election Reports Submitted</h3><p>ELECOM submitted the election reports to DHSUD.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="governance" data-keywords="20 MAR 2026 Governance First BOD Meeting First BOD meeting and appointment of TMG officers.">
+            <div class="announcement-date"><strong>20</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Governance</span><h3>First BOD Meeting</h3><p>First BOD meeting and appointment of TMG officers.</p></div>
+          </article>
+          <article class="announcement-row reveal" data-category="governance" data-keywords="15 MAR 2026 Governance Election and Newly Elected BOD Announcement Election and announcement of newly elected Board of Directors.">
+            <div class="announcement-date"><strong>15</strong><span>MAR 2026</span></div>
+            <div class="announcement-body"><span class="announcement-tag">Governance</span><h3>Election and Newly Elected BOD Announcement</h3><p>Election and announcement of newly elected Board of Directors.</p></div>
+          </article>
+          </div>
+          <p class="announcement-empty" id="announcementEmpty">No announcement matched your search.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="quick-access"><div class="container"><div class="section-heading light reveal"><p class="eyebrow gold">Resident Tools</p><h2>Quick Access</h2><p>Fast links for forms, documents, reports, policies, and official communication channels.</p></div><div class="card-grid four"><a class="quick-card reveal" href="https://www.facebook.com/groups/tmghoaiofficial/?rdid=h04K84F71wRllK7F&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg%2F1GCJCYYdxB%2F" target="_blank"><span>f</span><h3>Join Official Facebook Group</h3><p>Get official posts, notices, and community reminders.</p><strong>Open group →</strong></a><a class="quick-card reveal delay-1" href="https://docs.google.com/forms/d/e/1FAIpQLSdIbvGL8GOA6NEQMVIFkVygvPj40oVH7I6BjFla2YPtAX1w7g/viewform" target="_blank"><span>!</span><h3>Submit a Grievance</h3><p>Use the official form for concerns, reports, and requests.</p><strong>Open form →</strong></a><a class="quick-card reveal delay-2" href="https://docs.google.com/forms/d/e/1FAIpQLSe1yZ9ozDFpRZ_sHzhfBxRdi-vDzbKOEkxxFM-uxgalzSItEg/viewform" target="_blank"><span>□</span><h3>Request Forms</h3><p>Submit request forms through the official online channel.</p><strong>Open form →</strong></a><a class="quick-card reveal delay-3" href="#payments"><span>₱</span><h3>Payment Guide</h3><p>View HOA dues payment instructions and proof-of-payment reminders.</p><strong>Read guide →</strong></a></div></div></section>
+
+    <section class="section emergency-section emergency-reference-strip" id="emergency">
+      <div class="container">
+        <div class="section-heading reveal emergency-reference-heading">
+          <p class="eyebrow">Emergency &amp; Essential Contacts</p>
+          <h2>Quick reference for important community contacts</h2>
+          <p>Tap or click each card to view the full image guide for emergency hotlines, hospitals, dental clinics, legal assistance, and TMG contact numbers.</p>
+        </div>
+
+        <div class="emergency-reference-cards reveal" aria-label="Emergency and essential contact cards">
+          <a class="emergency-reference-card" href="sto-tomas-emergency-hotlines.png" target="_blank" rel="noopener">
+            <img src="sto-tomas-emergency-hotlines.png" alt="Sto. Tomas Emergency Hotlines">
+            <strong>Emergency Hotlines</strong>
+          </a>
+          <a class="emergency-reference-card" href="tmg-contact-numbers.jpg" target="_blank" rel="noopener">
+            <img src="tmg-contact-numbers.jpg" alt="TMG Contact Numbers">
+            <strong>TMG Contact Numbers</strong>
+          </a>
+          <a class="emergency-reference-card" href="hospitals-sto-tomas.png" target="_blank" rel="noopener">
+            <img src="hospitals-sto-tomas.png" alt="Hospitals in Santo Tomas">
+            <strong>Hospitals</strong>
+          </a>
+          <a class="emergency-reference-card" href="dental-clinics-sto-tomas.png" target="_blank" rel="noopener">
+            <img src="dental-clinics-sto-tomas.png" alt="Dental Clinics in Santo Tomas">
+            <strong>Dental Clinics</strong>
+          </a>
+          <a class="emergency-reference-card" href="law-offices-sto-tomas.png" target="_blank" rel="noopener">
+            <img src="law-offices-sto-tomas.png" alt="Law Offices and Notary in Sto. Tomas">
+            <strong>Law Offices / Notary</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section documents-section" id="documents">
+      <div class="container documents-layout">
+        <div class="documents-copy reveal">
+          <p class="eyebrow">Official Records</p>
+          <h2>Forms and Documents</h2>
+          <p>Download or open official records, policies, board resolutions, financial reports, and request forms.</p>
+          <div class="documents-note">
+            <span>✓</span>
+            <p>Use these links for verified HOA files and official reference documents.</p>
+          </div>
+        </div>
+
+        <div class="documents-grid">
+          <a class="document-card reveal" href="TMG-HOAI-By-Laws.pdf" target="_blank" rel="noopener">
+            <span class="document-icon">📄</span>
+            <small>PDF File</small>
+            <h3>By-Laws</h3>
+            <p>TMG HOAI By-Laws PDF file.</p>
+            <strong>Open PDF →</strong>
+          </a>
+          <a class="document-card reveal delay-1" href="https://drive.google.com/drive/u/8/folders/1DwgGErUuOVqdTcHl7-GM2OqNBeFBSd3G" target="_blank" rel="noopener">
+            <span class="document-icon">🏛️</span>
+            <small>Official Actions</small>
+            <h3>Board Resolutions</h3>
+            <p>Access approved official actions and board records.</p>
+            <strong>Open folder →</strong>
+          </a>
+          <a class="document-card reveal delay-2" href="https://drive.google.com/drive/u/8/folders/1J0_qDYgoApNCfEQa27xYuDiM3n-OZE9F" target="_blank" rel="noopener">
+            <span class="document-icon">📊</span>
+            <small>Reports</small>
+            <h3>Financial Reports</h3>
+            <p>View published financial reports and summaries.</p>
+            <strong>Open folder →</strong>
+          </a>
+          <a class="document-card reveal delay-3" href="https://drive.google.com/drive/u/8/folders/10UsevSO_QHzFT0mma2tHGBNQxNg0nETj" target="_blank" rel="noopener">
+            <span class="document-icon">🛡️</span>
+            <small>Policies</small>
+            <h3>TMG HOA Policies</h3>
+            <p>Access official policy files and community guidelines.</p>
+            <strong>Open folder →</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="payments"><div class="container"><div class="section-heading reveal"><p class="eyebrow">Payments / Dues</p><h2>HOA Dues Payment Instructions</h2><p>Please use the official HOA payment details listed below.</p></div><div class="payment-grid"><article class="payment-card reveal"><span>💵</span><h3>Cash</h3><p><strong>Office hours:</strong> To be announced</p><p><strong>Location:</strong> TMG Clubhouse</p></article><article class="payment-card reveal delay-1"><span>🏦</span><h3>Bank Transfer</h3><p><strong>Bank:</strong> BDO Preferred</p><p><strong>Account Name:</strong> The Mango Grove Homeowners Association</p><p><strong>Account Number:</strong> 006010517868</p></article><article class="payment-card reveal delay-2"><span>🧾</span><h3>Receipt Reminder</h3><p>Always keep your receipt or screenshot for verification and records.</p><p>Send proof to <strong>tmg.hoai@gmail.com</strong> or Messenger: <strong>TMG PIO</strong>.</p></article></div></div></section>
+
+    <section class="section" id="committees">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Board & Committees</p>
+          <h2>Leadership</h2>
+          <p>Current board information and HOA committee structure, presented in a cleaner and easier-to-read layout.</p>
+        </div>
+        <div class="leadership-grid refined-leadership">
+          <article class="board-card reveal">
+            <div class="board-icon">👥</div>
+            <p class="eyebrow gold">Board of Directors</p>
+            <h3>TMG HOAI Officers</h3>
+            <div class="officer-list">
+              <p><strong>President</strong><span>Rhonelee Casanova - Arbuis</span></p>
+              <p><strong>Vice President</strong><span>Roma Lopez - Mabilangan</span></p>
+              <p><strong>Treasurer</strong><span>Nica Talattad</span></p>
+              <p><strong>Secretary</strong><span>Lemuel De Luna</span></p>
+            </div>
+          </article>
+          <article class="committee-card refined-committees reveal delay-1">
+            <p class="eyebrow">Committees</p>
+            <h3>Community Committees</h3>
+            <div class="committee-list refined-list">
+              <span><b>01</b> Grievance & Adjudication</span>
+              <span><b>02</b> Audit & Inventory</span>
+              <span><b>03</b> Committee on Election</span>
+              <span><b>04</b> Development & Services</span>
+              <span><b>05</b> Membership & Education</span>
+              <span><b>06</b> Financial Management</span>
+              <span><b>07</b> Livelihood</span>
+              <span><b>08</b> Maintenance</span>
+              <span><b>09</b> Peace & Order</span>
+              <span><b>10</b> Social & Cultural Affairs</span>
+              <span><b>11</b> Public Affairs & Communication</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white-section" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Community Gallery</p>
+          <h2>Community Activities</h2>
+          <p>Browse community activity albums in one clean scrollable list. Basketball League and Easter Egg Hunt photos are available now.</p>
+        </div>
+
+        <div class="activity-gallery-shell reveal">
+          <div class="activity-gallery-stage">
+            <article class="activity-panel active" data-panel="basketball">
+              <div class="activity-panel-head">
+                <div>
+                  <p class="eyebrow">TMG Ballers</p>
+                  <h3>Basketball League</h3>
+                  <p>Photos from the court, the crowd, and the journey.</p>
+                </div>
+                <span class="photo-count">11 Photos</span>
+              </div>
+              <div class="album-slider" data-slider="basketball" aria-label="Basketball League photo slider">
+                <button class="slider-control prev" type="button" aria-label="Previous basketball photo">‹</button>
+                <div class="album-track">
+                  <figure class="album-slide active"><a href="basketball-1.jpg" target="_blank" rel="noopener"><img src="basketball-1.jpg" alt="TMG Ballers basketball league photo 1"></a></figure>
+                  <figure class="album-slide"><a href="basketball-2.jpg" target="_blank" rel="noopener"><img src="basketball-2.jpg" alt="TMG Ballers basketball league photo 2"></a></figure>
+                  <figure class="album-slide"><a href="basketball-3.jpg" target="_blank" rel="noopener"><img src="basketball-3.jpg" alt="TMG Ballers basketball league photo 3"></a></figure>
+                  <figure class="album-slide"><a href="basketball-4.jpg" target="_blank" rel="noopener"><img src="basketball-4.jpg" alt="TMG Ballers basketball league photo 4"></a></figure>
+                  <figure class="album-slide"><a href="basketball-5.jpg" target="_blank" rel="noopener"><img src="basketball-5.jpg" alt="TMG Ballers basketball league photo 5"></a></figure>
+                  <figure class="album-slide"><a href="basketball-6.jpg" target="_blank" rel="noopener"><img src="basketball-6.jpg" alt="TMG Ballers basketball league photo 6"></a></figure>
+                  <figure class="album-slide"><a href="basketball-7.jpg" target="_blank" rel="noopener"><img src="basketball-7.jpg" alt="TMG Ballers basketball league photo 7"></a></figure>
+                  <figure class="album-slide"><a href="basketball-8.jpg" target="_blank" rel="noopener"><img src="basketball-8.jpg" alt="TMG Ballers basketball league photo 8"></a></figure>
+                  <figure class="album-slide"><a href="basketball-9.jpg" target="_blank" rel="noopener"><img src="basketball-9.jpg" alt="TMG Ballers basketball league photo 9"></a></figure>
+                  <figure class="album-slide"><a href="basketball-10.jpg" target="_blank" rel="noopener"><img src="basketball-10.jpg" alt="TMG Ballers basketball league photo 10"></a></figure>
+                  <figure class="album-slide"><a href="basketball-11.jpg" target="_blank" rel="noopener"><img src="basketball-11.jpg" alt="TMG Ballers basketball league photo 11"></a></figure>
+                </div>
+                <button class="slider-control next" type="button" aria-label="Next basketball photo">›</button>
+              </div>
+              <div class="gallery-dots" data-dots="basketball" aria-label="Basketball photo navigation"></div>
+            </article>
+
+            <article class="activity-panel placeholder" data-panel="meeting">
+              <div class="placeholder-icon">🤝</div>
+              <p class="eyebrow">Community Meeting</p>
+              <h3>Photos to follow</h3>
+              <p>This album is ready for future community meeting photos and documentation.</p>
+            </article>
+
+            <article class="activity-panel placeholder" data-panel="mobile-legends">
+              <div class="placeholder-icon">🎮</div>
+              <p class="eyebrow">Mobile Legends Tournament</p>
+              <h3>Photos to follow</h3>
+              <p>This album is ready for future Mobile Legends Tournament photos.</p>
+            </article>
+
+            <article class="activity-panel" data-panel="easter">
+              <div class="activity-panel-head">
+                <div>
+                  <p class="eyebrow">Easter Egg Hunt</p>
+                  <h3>Easter Egg Hunt</h3>
+                  <p>Photos from the celebration, games, and happy faces.</p>
+                </div>
+                <span class="photo-count">12 Photos</span>
+              </div>
+              <div class="album-slider" data-slider="easter" aria-label="Easter Egg Hunt photo slider">
+                <button class="slider-control prev" type="button" aria-label="Previous Easter photo">‹</button>
+                <div class="album-track">
+                  <figure class="album-slide active"><a href="easter-1.jpg" target="_blank" rel="noopener"><img src="easter-1.jpg" alt="Easter Egg Hunt photo 1"></a></figure>
+                  <figure class="album-slide"><a href="easter-2.jpg" target="_blank" rel="noopener"><img src="easter-2.jpg" alt="Easter Egg Hunt photo 2"></a></figure>
+                  <figure class="album-slide"><a href="easter-3.jpg" target="_blank" rel="noopener"><img src="easter-3.jpg" alt="Easter Egg Hunt photo 3"></a></figure>
+                  <figure class="album-slide"><a href="easter-4.jpg" target="_blank" rel="noopener"><img src="easter-4.jpg" alt="Easter Egg Hunt photo 4"></a></figure>
+                  <figure class="album-slide"><a href="easter-5.jpg" target="_blank" rel="noopener"><img src="easter-5.jpg" alt="Easter Egg Hunt photo 5"></a></figure>
+                  <figure class="album-slide"><a href="easter-6.jpg" target="_blank" rel="noopener"><img src="easter-6.jpg" alt="Easter Egg Hunt photo 6"></a></figure>
+                  <figure class="album-slide"><a href="easter-7.jpg" target="_blank" rel="noopener"><img src="easter-7.jpg" alt="Easter Egg Hunt photo 7"></a></figure>
+                  <figure class="album-slide"><a href="easter-8.jpg" target="_blank" rel="noopener"><img src="easter-8.jpg" alt="Easter Egg Hunt photo 8"></a></figure>
+                  <figure class="album-slide"><a href="easter-9.jpg" target="_blank" rel="noopener"><img src="easter-9.jpg" alt="Easter Egg Hunt photo 9"></a></figure>
+                  <figure class="album-slide"><a href="easter-10.jpg" target="_blank" rel="noopener"><img src="easter-10.jpg" alt="Easter Egg Hunt photo 10"></a></figure>
+                  <figure class="album-slide"><a href="easter-11.jpg" target="_blank" rel="noopener"><img src="easter-11.jpg" alt="Easter Egg Hunt photo 11"></a></figure>
+                  <figure class="album-slide"><a href="easter-12.jpg" target="_blank" rel="noopener"><img src="easter-12.jpg" alt="Easter Egg Hunt photo 12"></a></figure>
+                </div>
+                <button class="slider-control next" type="button" aria-label="Next Easter photo">›</button>
+              </div>
+              <div class="gallery-dots" data-dots="easter" aria-label="Easter photo navigation"></div>
+            </article>
+          </div>
+
+          <div class="activity-album-list gallery-scroll-list" aria-label="Community activity albums">
+            <div class="album-list-title">
+              <p class="eyebrow">Browse Albums</p>
+              <h3>Select an album</h3>
+            </div>
+            <button class="activity-album" type="button" data-album="meeting">
+              <span aria-hidden="true">🤝</span>
+              <div class="album-text">
+                <strong>Community Meeting</strong>
+                <small>Photos available</small>
+              </div>
+            </button>
+            <button class="activity-album" type="button" data-album="mobile-legends">
+              <span aria-hidden="true">🎮</span>
+              <div class="album-text">
+                <strong>Mobile Legends Tournament</strong>
+                <small>Photos available</small>
+              </div>
+            </button>
+            <button class="activity-album active" type="button" data-album="basketball">
+              <span aria-hidden="true">🏀</span>
+              <div class="album-text">
+                <strong>Basketball League</strong>
+                <small>Photos available</small>
+              </div>
+            </button>
+            <button class="activity-album" type="button" data-album="easter">
+              <span aria-hidden="true">🥚</span>
+              <div class="album-text">
+                <strong>Easter Egg Hunt</strong>
+                <small>Photos available</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="video-block reveal delay-1">
+          <div class="video-copy">
+            <p class="eyebrow gold">Video Link</p>
+            <h3>Community Video Update</h3>
+            <p>Watch the YouTube video separately from the photo gallery.</p>
+          </div>
+          <a class="video-button" href="https://www.youtube.com/watch?v=wNAQV3iFcf8" target="_blank" rel="noopener">Watch on YouTube →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark refined-contact-section" id="contact">
+      <div class="container contact-grid refined-contact-grid">
+        <div class="reveal contact-copy">
+          <p class="eyebrow gold">Contact</p>
+          <h2>Reach the HOA through the proper channels.</h2>
+          <p>For official concerns, use the designated forms or contact details so requests can be documented, assigned, and followed up properly.</p>
+          <div class="contact-actions">
+            <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdIbvGL8GOA6NEQMVIFkVygvPj40oVH7I6BjFla2YPtAX1w7g/viewform" target="_blank" rel="noopener">Submit Grievance</a>
+            <a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSe1yZ9ozDFpRZ_sHzhfBxRdi-vDzbKOEkxxFM-uxgalzSItEg/viewform" target="_blank" rel="noopener">Request Forms</a>
+          </div>
+        </div>
+        <div class="contact-card refined-contact-card reveal delay-1">
+          <p><strong>Location:</strong> The Mango Grove Community</p>
+          <p><strong>Email:</strong> tmg.hoai@gmail.com</p>
+          <p><strong>Messenger:</strong> TMG PIO</p>
+          <p><strong>Notice:</strong> Official announcements only through verified channels.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="future-section"><div class="container future-card reveal"><div><p class="eyebrow gold">Future Ready Community</p><h2>A modern platform built for long-term community operations.</h2><p>This website structure is designed to scale into announcements, online payments, booking systems, digital IDs, homeowner accounts, transparency reporting, and future HOA systems.</p></div><div class="future-list"><strong>Potential Future Features</strong><p>Online homeowner portal</p><p>Online dues payment</p><p>Amenity reservations</p><p>Visitor and sticker system</p><p>Community marketplace</p><p>Digital transparency reports</p></div></div></section>
+  </main>
+  <footer class="footer"><p>© 2026 TMG HOAI. Official Community Website.</p></footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <span aria-hidden="true">↑</span>
+  </button>
+  <script src="script.js"></script>
+</body>
+</html>
